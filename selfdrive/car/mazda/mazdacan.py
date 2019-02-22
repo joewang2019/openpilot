@@ -11,4 +11,4 @@ def create_steering_control(packer, bus, car_fingerprint, idx, steer, checksum):
       "CHKSUM": checksum
     }
 
-  return packer.make_can_msg("CAM_LKAS", 0, values)
+  return packer.make_can_msg("CAM_LKAS", bus, values)
